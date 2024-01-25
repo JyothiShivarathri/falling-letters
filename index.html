@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: burlywood;
+}
+
+.falling-letters {
+  font-size: 3rem;
+  font-weight: bold;
+  display: inline-block;
+  position: relative;
+
+}
+
+.falling-letters span {
+  display: inline-block;
+  opacity: 0;
+  animation: fallAnimation 1s forwards;
+}
+
+@keyframes fallAnimation {
+  0% {
+    transform: translateY(-80px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.falling-letters span:nth-child(1){
+    animation-delay: 0.5s;
+}
+.falling-letters span:nth-child(2){
+    animation-delay:1s;
+}
+.falling-letters span:nth-child(3){
+    animation-delay: 1.5s;
+}
+.falling-letters span:nth-child(4){
+    animation-delay: 2s;
+}
+.falling-letters span:nth-child(5){
+    animation-delay: 2.5s;
+}
+.falling-letters span:nth-child(6){
+    animation-delay: 3s;
+}
+
+    
+  </style>
+</head>
+<body>
+  
+    <div class="falling-letters">
+        <span>J</span>
+        <span>y</span>
+        <span>o</span>
+        <span>t</span>
+        <span>h</span>
+        <span>i</span>
+        
+      </div>
+    
+</body>
+</html>
